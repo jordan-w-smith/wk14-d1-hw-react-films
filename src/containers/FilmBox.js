@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import FilmList from "../components/FilmList";
+import "./film-box.css"
 
 class FilmBox extends Component {
 
@@ -38,10 +39,10 @@ class FilmBox extends Component {
 
     render() {
         return (
-            <div>
+            <div className="filmBox">
                 <h1>Upcoming Films</h1>
                 <FilmList films={this.state.data}></FilmList>
-                <a href="https://www.imdb.com/calendar/?region=gb">View more upcoming releases</a>
+                <button><a href="https://www.imdb.com/calendar/?region=gb">View more upcoming releases</a></button>
             </div>
         )
     }
